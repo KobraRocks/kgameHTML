@@ -15,14 +15,13 @@ The `<game-scene>` is a custom container element specifically designed to hold g
 
 #### Content Model:
 
-- The `<game-scene>` can contain one or more `<game-level>` elements, representing individual game levels.
+- The `<game-scene>` contains only `<game-level>` elements, representing an individual game level.
 
 #### Example Usage:
 
 ```html
 <game-scene history="/level1, /level2" direction="vertical">
-    <game-level src="/level1">...</game-level>
-    <game-level src="/level2">...</game-level>
+    <game-level id="level2" type="story" mode="slideshow" axis="vertical">...</game-level>
     ...
 </game-scene>
 ```
